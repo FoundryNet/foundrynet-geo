@@ -1,0 +1,9 @@
+name: foundrynet-geo
+displayName: FoundryNet Geo
+description: x402-gated geocoding + distance gateway. Address↔lat/lng (Census + Nominatim).
+remote:
+  url: https://foundrynet-geo-production.up.railway.app/mcp
+  transport: streamable-http
+homepage: https://foundrynet.io
+tools: [geocode, distance]
+keywords: [geocoding, geocode, reverse-geocode, address, coordinates, distance, logistics, delivery, real-estate, maps]
