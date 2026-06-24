@@ -1,8 +1,16 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.FoundryNet/foundrynet-geo",
-  "description": "x402-gated geocoding + distance gateway. Tools: geocode, distance.",
-  "version": "1.0.0",
-  "repository": { "url": "https://github.com/FoundryNet/foundrynet-geo", "source": "github" },
-  "remotes": [ { "type": "streamable-http", "url": "https://foundrynet-geo-production.up.railway.app/mcp" } ]
+  "description": "Facility location risk assessment — score any address for weather threats, regulatory activity, and operational risk factors. Also provides geocoding and distance calculations. Tools: geocode, distance, facility_risk.",
+  "version": "1.1.0",
+  "repository": {
+    "url": "https://github.com/FoundryNet/foundrynet-geo",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://foundrynet-geo-production.up.railway.app/mcp"
+    }
+  ]
 }

@@ -1,6 +1,6 @@
-# FoundryNet Geo
+# FoundryNet Geo — Facility Risk Mapper
 
-x402-gated **geocoding + distance** gateway for AI agents. One call, one micropayment — no API keys, no accounts.
+Facility location risk assessment — score any address for weather threats, regulatory activity, and operational risk factors. Also provides geocoding and distance calculations. One call, one micropayment — no API keys, no accounts.
 
 Part of the [FoundryNet Data Network](https://foundrynet.io). Pay-per-call in USDC (x402) or bypass with an `fnet_` Forge key. Also exposed as an MCP server so agents on Smithery/Glama/Claude can call it directly.
 
@@ -10,6 +10,7 @@ Part of the [FoundryNet Data Network](https://foundrynet.io). Pay-per-call in US
 |--------------|-------|-------------|
 | `geocode` — `POST /v1/geocode` | $0.005 | Address → `{lat, lng, formatted_address, components}`, or `{lat,lng}` → reverse-geocode |
 | `distance` — `POST /v1/distance` | $0.005 | `{from, to}` → `{distance_km, duration_estimate}` |
+| `facility_risk` — `POST /v1/facility-risk` | $0.02 | `{address}` → `{risk_score, risk_level, risk_factors[], coordinates, recommendation}` — geocodes the address, then enriches with live weather alerts (and regulatory jurisdiction activity) from sibling FoundryNet servers |
 
 Backends: **US Census Geocoder** (precise for US addresses) + **Nominatim / OpenStreetMap** (global) — both free and keyless.
 

@@ -1,9 +1,9 @@
 name: foundrynet-geo
 displayName: FoundryNet Geo
-description: x402-gated geocoding + distance gateway. Address↔lat/lng (Census + Nominatim).
+description: Facility location risk assessment — score any address for weather threats, regulatory activity, and operational risk factors. Also provides geocoding and distance calculations.
 remote:
   url: https://foundrynet-geo-production.up.railway.app/mcp
   transport: streamable-http
 homepage: https://foundrynet.io
-tools: [geocode, distance]
-keywords: [geocoding, geocode, reverse-geocode, address, coordinates, distance, logistics, delivery, real-estate, maps]
+tools: [geocode, distance, facility_risk]
+keywords: [geocoding, geocode, reverse-geocode, address, coordinates, distance, logistics, delivery, real-estate, maps, facility-risk, location-assessment, operational-risk, site-evaluation, supply-chain-location]
